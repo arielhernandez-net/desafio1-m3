@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Desafio Guiado 1 - M3</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col mt-3 ">
+                <h3>1. Diagrama</h3>
+                <img class="img-fluid " src="assets/img/diagrama.png" alt="Diagrama">
+            </div>
+            <div class="col mt-3 ">
+                <div class="container">
+                    <h3>2. Calculadora</h3>
+                    <form id="operaciones">
+                        <label for="numero1">Ingrese numero 1:</label>
+                        <input class="form-control" type="number" id="numero1" name="numero1" required min="0">
+                        <label for="numero2">Ingrese numero 2:</label>
+                        <input class="form-control" type="number" id="numero2" name="numero2" required min="0">
+                        <button class="btn btn-success mt-3  mb-3 " type="submit">Calcular</button>
+                    </form>
+                    <div class="bg-info" id="resultado"></div>
+                </div>
+                <div class="container mt-3 ">
+                    <h3>3. Temperaturas</h3>
+                    <form id="temperatura">
+                        <label for="celsius">Ingrese temperatura en grados Celsius:</label>
+                        <input class="form-control" type="number" id="celsius" name="celsius" required>
+                        <button class="btn btn-success mt-3  mb-3" type="submit">Convertir</button>
+                    </form>
+                    <div class="bg-info" id="resultadoTemperatura"></div>
+                </div>
+                <div class="container mt-3 ">
+                    <h3>4. Convertidor de Dias</h3>
+                    <form id="diasForm">
+                        <label for="dias">Ingrese cantidad de días:</label>
+                        <input class="form-control" type="number" id="dias" name="dias" required min="1">
+                        <button class="btn btn-success mt-3  mb-3" type="submit">Convertir</button>
+                    </form>
+                    <div class="bg-info" id="resultadoDias"></div>
+                </div>
+            </div>
+            <div class="col ">
+                <div class="container mt-3 mb-5">
+                    <h2>5. Calculo Numeros</h2>
+                    <form id="numeros">
+                        <label for="numero1">Ingrese numero 1:</label>
+                        <input class="form-control" type="number" id="numeroSuma1" name="numero1" required>
+                        <label for="numero2">Ingrese numero 2:</label>
+                        <input class="form-control" type="number" id="numeroSuma2" name="numero2" required>
+                        <label for="numero3">Ingrese numero 3:</label>
+                        <input class="form-control" type="number" id="numeroSuma3" name="numero3" required>
+                        <label for="numero4">Ingrese numero 4:</label>
+                        <input class="form-control" type="number" id="numeroSuma4" name="numero4" required>
+                        <label for="numero5">Ingrese numero 5:</label>
+                        <input class="form-control" type="number" id="numeroSuma5" name="numero5" required>
+                        <button class="btn btn-success mt-3  mb-3" type="submit">Calcular</button>
+                    </form>
+                    <div class="bg-info" id="resultadoNumeros"></div>
+                </div>
+            </div>
+        </div>     
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script defer src="assets/js/main.js"></script>
+</body>
+</html>
